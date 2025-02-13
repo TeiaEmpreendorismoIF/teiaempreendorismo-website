@@ -1,0 +1,91 @@
+/* Estilo para a seção "Quem Somos" */
+#quem-somos {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+#quem-somos h2{
+    padding-left: 15px;
+}
+
+.quem-somos-conteudo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.quem-somos-conteudo div {
+    width: 100%;
+}
+
+.quem-somos-conteudo p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    padding: 0 15px; 
+}
+
+.quem-somos-conteudo img {
+    width: 90%; 
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes para telas maiores (Tablets e Desktop) */
+@media screen and (min-width: 768px) {
+    .quem-somos-conteudo {
+        flex-direction: row;
+        text-align: left;
+    }
+    .quem-somos-conteudo div {
+        width: 50%;
+    }
+    .quem-somos-conteudo img {
+        width: 50%;
+    }
+}
+
+/* Estilo para a seção "Como Atuamos" */
+#como-atuamos {
+    width: 100%; 
+    padding: 60px 20px; 
+    background-color: #f7f7f7;
+    color: black; 
+    text-align: center; 
+}
+
+/* Estilo para o título e o conteúdo dentro da seção */
+#como-atuamos h2 {
+    font-size: 2em;
+    margin-bottom: 20px; 
+    
+}
+
+#como-atuamos p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto; 
+    line-height: 1.6; 
+}
+
+.missao-visao-valores{
+    padding: 25px 5px;
+}
+
+/* Listas de Valores */
+section#missao-visao-valores ul {
+    
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section#missao-visao-valores ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}

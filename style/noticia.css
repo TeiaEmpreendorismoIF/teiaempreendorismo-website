@@ -1,0 +1,104 @@
+/* Estilização do contêiner de notícias */
+.noticias-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Estilização do card de notícia */
+.noticia-card {
+    background-color: #ffffff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: 300px; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+
+.noticia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização do título da notícia */
+.noticia-card h3 {
+    font-size: 20px; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+/* Estilização da imagem */
+.noticia-card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+/* Estilização da descrição */
+.noticia-card p {
+    font-size: 14px; 
+    color: #666; 
+    margin-bottom: 15px; 
+}
+
+/* Estilização do link "Leia mais" */
+.noticia-card a {
+    display: inline-block; 
+    padding: 10px 15px; 
+    background-color: #007BFF; 
+    color: white; 
+    border-radius: 5px; 
+    text-decoration: none;
+    transition: background-color 0.3s; 
+}
+
+/* Efeito de hover no link */
+.noticia-card a:hover {
+    background-color: #0056b3; 
+}
+
+/* Estilização do contêiner do carrossel */
+.swiper-container {
+    width: 100%;
+    height: auto; 
+    margin: 20px 0; 
+}
+
+/* Estilização do slide */
+.swiper-slide {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .noticias-container {
+        display: none; 
+    }
+
+    .swiper-container {
+        display: block; 
+    }
+
+    .noticia-card {
+        width: 90%; 
+        margin: 10px auto; 
+    }
+}
+
+@media (min-width: 769px) {
+    .swiper-container {
+        display: none; 
+    }
+
+    .noticias-container {
+        display: flex; 
+    }
+}
